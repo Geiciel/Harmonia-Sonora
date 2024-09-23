@@ -23,6 +23,29 @@ header {
     }
 }
 
+@media screen and (min-width: 601px) {
+    .pnot-10 {
+        display: flex;
+    }
+
+    .pnot-10 > p {
+        margin-right: 10px;
+    }
+    
+    #imgseg {
+        display: inline;
+    }
+
+    #imgpri {
+        display: none;
+    }
+
+    .pnot-10 > img {
+        float: right;
+        width: 260px;
+    }
+}
+
 @media screen and (min-width: 992px) { /* desktop */
     header {
         background: url(../img/Design\ sem\ nome_20240915_010131_0000.png);
@@ -42,7 +65,18 @@ h1 {
     margin-bottom: 10px;
     font-size: 2.3rem;
 }
-  
+
+h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 2.3rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #f7e713;
+}
+
 p {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -62,7 +96,7 @@ div {
     margin: auto;
 }
 
-div.not-1, .not-2, .not-3, .not-4, .not-5, .not-6, .not-7, .not-8, .not-9 {
+div.not-1, .not-2, .not-3, .not-4, .not-5, .not-6, .not-7, .int-8, .not-9, .not-10, .h2 {
     max-width: 800px;
     margin: auto;
     display: flex;
@@ -232,12 +266,41 @@ div.not-3 h1 {
     transition: 0.8s;
 }
 
+div.wm {
+    background-image: url(../img/audio-7276511_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 15px;
+    box-shadow: inset 10px 10px 20px #00000080;
+    margin-bottom: 30px;
+}
+
+div.wm h2 {
+    color: #e94483;
+    font-size: 4rem;
+    text-shadow: 3px 3px 5px #00000098;
+    background-color: #00000021;
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    display: inline-block;
+    padding: 10px;
+}
+
 .ext-8 {
     background-color: #f19fbf;
 }
 
 .ext-8 h1 {
     color: #ffffff;
+}
+
+.not-8 {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
 }
 
 .butt-not-8 button {
@@ -251,8 +314,9 @@ div.not-3 h1 {
     transition: 0.8s;
 }
 
-.not-8 > img {
-    margin-bottom: 16px;
+.not-8 img {
+    margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 .div-p {
@@ -268,16 +332,16 @@ div.not-3 h1 {
 }
 
 .ext-9 h1 {
-    color: #ffffff;
+    color: #000000;
 }
 
 .butt-not-9 button {
-    border: 2px solid #ffffff;
-    color: #ffffff;
+    border: 2px solid #000000;
+    color: #000000;
 }
 
 .butt-not-9 button:hover {
-    background-color: #ffffff;
+    background-color: #000000;
     color: #f7e713;
     transition: 0.8s;
 }
@@ -292,4 +356,56 @@ div.not-3 h1 {
 
 .div-p > p {
     max-width: 900px;
+}
+
+.ext-10 {
+    background-color: #000000;
+}
+
+.ext-10 h1 {
+    color: #f7e713;
+}
+
+.butt-not-10 button {
+    border: 2px solid #f7e713;
+    color: #f7e713;
+}
+
+.butt-not-10 button:hover {
+    background-color: #f7e713;
+    color: #000000;
+    transition: 0.8s;
+}
+
+.not-10 > img {
+    margin-bottom: 16px;
+}
+
+.div-p {
+    width: 98%;
+}
+
+.not-10 p {
+    color: #ffffff;
+    max-width: 900px;
+}
+
+.pnot-10 {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    #imgseg {
+        display: none;
+    }
+
+    #imgpri {
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+#imgmei {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
